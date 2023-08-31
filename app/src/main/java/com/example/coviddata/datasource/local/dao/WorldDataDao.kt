@@ -7,7 +7,6 @@ import com.example.coviddata.model.WorldData
 @Dao
 interface WorldDataDao {
 
-
     @Query("SELECT * FROM WorldData")
     fun getHistoryWorldDataLiveData(): LiveData<List<WorldData>>
 

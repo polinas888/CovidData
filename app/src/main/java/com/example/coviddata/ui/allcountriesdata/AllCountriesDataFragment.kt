@@ -22,11 +22,14 @@ class AllCountriesDataFragment : Fragment() {
 
     val viewModel: AllCountriesDataViewModel by viewModels()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    )
             : View? {
-        val root = inflater.inflate(R.layout.fragment_data_all_countries, container, false)
 
-        return root
+        return inflater.inflate(R.layout.fragment_data_all_countries, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
